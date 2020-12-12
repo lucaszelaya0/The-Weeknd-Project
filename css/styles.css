@@ -1,0 +1,366 @@
+/* CSS Principal */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  margin-left: 50%;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.icon {
+  padding-left: 2%;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+footer {
+  background-color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+
+.redes {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: whitesmoke;
+}
+
+.redes__icons {
+  display: flex;
+  align-items: center;
+}
+.redes__icons a img {
+  padding: 5%;
+  width: 60%;
+}
+.redes__icons a img:hover {
+  width: 80%;
+}
+
+.terminos {
+  display: flex;
+  text-align: right;
+}
+
+.zoom :hover {
+  font-size: 16px;
+}
+
+/*  Fin CSS Principal*/
+/*Index CSS */
+.hero {
+  display: flex;
+  background-color: black;
+}
+
+.hero__text {
+  padding: 30px;
+  color: whitesmoke;
+}
+.hero__text h2 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 300%;
+}
+.hero__text p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%;
+}
+
+/* Fin IndexCSS */
+/*Musica CSS */
+.musica {
+  background: black;
+  color: whitesmoke;
+}
+.musica h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 300%;
+}
+
+.discos__recientes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5%;
+}
+
+.discos__antiguos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5%;
+}
+
+.exitos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Fin Musica CSS  */
+/*Biografia CSS prox*/
+.article {
+  padding: 20px 30px;
+  background-color: black;
+}
+.article h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+.article h2 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+.article img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.article p {
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Galeria Css*/
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.galeria__fotos {
+  background-color: black;
+}
+.galeria__fotos h2 {
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  padding: 2%;
+  font-size: 260%;
+}
+
+.galeria__carousel {
+  background-color: black;
+}
+.galeria__carousel .container {
+  padding: 5%;
+}
+
+.galeria__videos {
+  background-color: black;
+}
+.galeria__videos h2 {
+  color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  padding: 2%;
+  font-size: 260%;
+}
+
+.color {
+  font-family: "Montserrat", sans-serif;
+  background: black;
+}
+
+.grid-container {
+  width: auto;
+  height: 1500px;
+  display: grid;
+  grid-template-columns: 1.1fr 2.1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "grid__left grid__right" "grid__bottom grid__bottom";
+}
+
+.grid_left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ".";
+  grid-area: grid__left;
+}
+
+.grid__bottom {
+  grid-area: grid__bottom;
+}
+
+.grid__right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "grid__rightTop" "grid__rightBottom";
+  grid-area: grid__right;
+}
+
+.grid__rightTop {
+  grid-area: grid__rightTop;
+}
+
+.grid__rightBottom {
+  grid-area: grid__rightBottom;
+}
+
+.grid__left {
+  background: url("../img/galeria/left-top.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.grid__rightTop {
+  background: url("../img/galeria/cneter-topt.jpg");
+  background-size: cover;
+}
+
+.grid__rightBottom {
+  background: url("../img/galeria/center-botom.jpg");
+  background-size: cover;
+}
+
+.grid__bottom {
+  background: url("../img/galeria/bottom-center.jpg");
+  background-size: cover;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/*Fin Galeria Css*/
+/*Tour CSS*/
+.tour {
+  background-color: black;
+}
+
+.img-tour {
+  width: 100%;
+  background-color: black;
+}
+
+.tour__info {
+  margin: 20px;
+}
+
+.tickets {
+  color: brown;
+  text-align: center;
+  border-top: 0.1px solid red;
+  padding: 5% 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.date {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: left;
+}
+
+.place {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.field {
+  text-transform: uppercase;
+  padding-bottom: 2%;
+}
+
+.ticket a {
+  text-align: right;
+  color: red;
+  font-size: 12.5px;
+  background-color: black;
+  border: 1px solid red;
+}
+
+.ticket :hover {
+  padding: 2%;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+/*Fin Tour CSS*/
+/*Contacto CSS*/
+.contact {
+  padding: 40px;
+  background-color: #c2c2c2;
+}
+.contact h2 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 350%;
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact__text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: whitesmoke;
+  padding: 20px 40px;
+  outline: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.contact__text textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact__btn {
+  float: right;
+  border: 0;
+  background: black;
+  padding: 12px 50px;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+
+/* Responsive CSS*/
+@media screen and (max-width: 770px) {
+  .hero {
+    display: block;
+  }
+
+  .hero__img img {
+    width: 100%;
+  }
+}
