@@ -340,4 +340,41 @@ a{
         display: flex;
         justify-content: center;
     }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "grid__left"
+        "grid__right"
+        "grid__bottom"
+        ;
+        .grid__left{
+            grid-area: grid__left ;
+            background-position-y: 20%;
+        }
+        .grid__right{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "grid__rightTop"
+                "grid__rightBottom";
+            grid-area: grid__right;
+        }
+        .grid__rightBottom{
+            grid-area: grid__rightBottom ;  
+            background-position: 50%;
+        }
+        .grid__rightTop{
+            grid-area: grid__rightTop ;
+            background-position: 50%;
+        }
+        .grid__bottom{
+            grid-area: grid__bottom ;
+            background-position: 60%;
+        }
+    }
 }
