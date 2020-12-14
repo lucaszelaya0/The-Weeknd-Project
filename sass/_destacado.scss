@@ -127,11 +127,15 @@ footer{
         img{
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 80%;
         }
         p{
             color: $secondary;
             font-family: $secondaryFont;
+        }
+        .article-iframe{
+            width: 100%;
+            height: 500px;
         }
 }
 /*Galeria Css*/
