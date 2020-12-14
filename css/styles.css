@@ -363,4 +363,14 @@ a {
   .hero__img img {
     width: 100%;
   }
+
+  .discos__recientes {
+    display: flex;
+    justify-content: center;
+  }
+
+  .discos__antiguos {
+    display: flex;
+    justify-content: center;
+  }
 }
